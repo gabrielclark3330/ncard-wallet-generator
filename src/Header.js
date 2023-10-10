@@ -28,12 +28,12 @@ function Header(props) {
   const [searchText, setSearchText] = useState("");
   useEffect(() => {
     request(searchText, props.setStudents);
-  }, [searchText]);
+  }, [searchText, props.setStudents]);
   return (
     <div className="p-4 shadow-lg sticky top-0 bg-white">
       <div className="container mx-auto flex items-center justify-between">
         <div>
-          <img src="/OctoUnl-removebg.png" alt="Logo" className="h-12 w-auto" />
+          <img src="/WindowUNL-removebg.png" alt="Logo" className="h-12 w-auto" />
         </div>
 
         <div className="flex-grow px-4">

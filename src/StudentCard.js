@@ -58,8 +58,8 @@ function StudentCard(props) {
     <div className="rounded-lg my-6 mx-4 shadow-lg border border-gray">
       {showOverlay && (
         <div className="fixed inset-0 flex items-center justify-center z-10">
-          <div className="bg-white p-8 rounded-lg shadow-lg border border-gray">
-            <h2 className="text-xl mb-4">NCard Barcode iteration {cardIteration} 😈</h2>
+          <div className="bg-white p-8 rounded-lg shadow-lg border border-gray text-center">
+            <h2 className="text-xl mb-4">🏮 NCard Barcode Issue {cardIteration} 🏮</h2>
             <BarcodeGenerator value={studentJson.unluncwid + cardIteration.toString().padStart(4, 0)} />
             <div>
               <button
